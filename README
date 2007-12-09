@@ -1,0 +1,28 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=2090
+
+Tags: vimdiff svn subversion diff 
+
+WHY I WRITE IT:
+  During daily work, I often need to read the result of "svn diff" before I commit my work into subversion repository. But only reading the diff result is tedious: sometimes I want to read more context lines; sometimes, when I find some mistake I made in my work, I have to open the file and modify the codes there. On the other hand, vim provide a very good way to view the diff of two versions of file, that is vimdiff, I like it! So f we can use it here that will be very useful. But after some web searching, I did not find anything that can help me here. So the script comes out.
+
+HOW TO USE IT:
+  Normally I use this script in the following way: 
+    1. piped svn diff result to vim, for example: "svn diff | vim - "
+    2. use shortcuts to open vimdiff modes on current diff file
+    shortcuts: 
+        <leader>dv   :   open two versions of file in vimdiff mode
+        <leader>df    :   open  the old/new file 
+        <leader>dn   :   open next two versions of file in vimdiff mode in svn diff result file
+        <leader>dp   :   open previous two versions of file in vimdiff mode in svn diff result file
+        <leader>dz   :    fold svn diff result file
+    This script work both for svn diff result and normal diff result. 
+
+    There is not more docs till now(maybe more in future), but you can learn this script by trying it :)    
+
+  I need to point out that I am not an experienced vim script programmer and I just want to work out a script that can fulfill my needs. So the codes of script may not be beautiful, but I have used it for several months and it works fine. 
+
+  If you have any comment, bug report, patch, please email it to me(linsong DOT qizi AT gmail DOT com), Thanks. 
+
+  Happy Vimming! 
+
+
